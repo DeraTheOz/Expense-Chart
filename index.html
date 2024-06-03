@@ -1,43 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="css/queries.css" type="text/css" media="all" />
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
 
+		<link
+			rel="stylesheet"
+			href="css/style.css"
+			type="text/css"
+			media="all"
+		/>
+		<link
+			rel="stylesheet"
+			href="css/queries.css"
+			type="text/css"
+			media="all"
+		/>
 
-  
-  <script defer src="/script.js" type="text/javascript" charset="utf-8"></script>
-  
+		<title>Frontend Mentor | Expenses chart component</title>
 
-</head>
-<body>
+		<script
+			defer
+			src="/script.js"
+			type="text/javascript"
+			charset="utf-8"
+		></script>
+	</head>
+	<body>
+		<section class="chart">
+			<div class="chart__header">
+				<div>
+					<span>My balance</span>
+					<h3 class="header__balance">$921.48</h3>
+				</div>
 
-  My balance
-  $921.48
+				<img class="logo" src="images/logo.svg" alt="company logo" />
+			</div>
 
-  Spending - Last 7 days
+			<div class="chart__stats">
+				<h2 class="stats-title">Spending - Last 7 days</h2>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+				<div class="chart-details">
+					<div class="chart-box">
+						<span class="chart__price">$52.45</span>
+						<span class="chart__size"></span>
+						<p class="day mon">mon</p>
+					</div>
 
-  Total this month
-  $478.33
+					<div class="chart-box">
+						<span class="chart__price">$17.45</span>
+						<span class="chart__size tue"></span>
+						<p class="day">tue</p>
+					</div>
 
-  +2.4%
-  from last month
-  
+					<div class="chart-box">
+						<span class="chart__price">$17.45</span>
+						<span class="chart__size wed"></span>
+						<p class="day">wed</p>
+					</div>
 
-</body>
+					<div class="chart-box">
+						<span class="chart__price">$17.45</span>
+						<span class="chart__size thu"></span>
+						<p class="day">thu</p>
+					</div>
+
+					<div class="chart-box">
+						<span class="chart__price">$17.45</span>
+						<span class="chart__size fri"></span>
+						<p class="day">fri</p>
+					</div>
+
+					<div class="chart-box">
+						<span class="chart__price">$17.45</span>
+						<span class="chart__size sat"></span>
+						<p class="day">sat</p>
+					</div>
+
+					<div class="chart-box">
+						<span class="chart__price">$17.45</span>
+						<span class="chart__size sun"></span>
+						<p class="day">sun</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		Total this month $478.33 +2.4% from last month
+	</body>
 </html>
