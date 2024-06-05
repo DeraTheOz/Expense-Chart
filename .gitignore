@@ -12,6 +12,7 @@
 *.xd
 *.md
 design
+data.json
 
 
 # Avoid your project being littered with annoying .DS_Store files!
