@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 /* General reset */
-
 *,
 *::before,
 *::after {
@@ -22,6 +21,8 @@ html {
 	--cyan: hsl(186, 34%, 60%);
 
 	/*  Neutral */
+	--soft-red-gradient: #ff9b86;
+	--cyan-gradient: #b4e0e5;
 	--dark-brown: hsl(25, 47%, 15%);
 	--medium-brown: hsl(28, 10%, 53%);
 	--cream: hsl(27, 66%, 92%);
@@ -38,15 +39,9 @@ body {
 	background-color: var(--cream);
 }
 
-/* section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .chart {
 	max-width: 54rem;
-	margin: 20rem auto;
+	margin: 5% auto;
 }
 
 .chart__header {
@@ -62,6 +57,10 @@ body {
 .header__balance {
 	font-size: 3.2rem;
 	font-weight: 700;
+}
+
+.logo {
+	max-width: 100%;
 }
 
 .chart__stats {
@@ -94,27 +93,30 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	gap: 0.8rem;
-	transition: all 0.3s ease-in;
 }
 
 .chart__price {
-	max-width: 7.5rem;
+	width: 6.5rem;
 	min-width: 100%;
 	font-weight: 700;
 	padding: 0.5rem 0.8rem;
 	border-radius: 0.4rem;
 	color: var(--very-pale-orange);
 	background-color: var(--dark-brown);
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in;
+}
 
-	/* display: none; */
+.price {
+	opacity: 1;
+	visibility: visible;
 }
 
 .chart__size {
-	max-width: 5.36rem;
-	min-width: 80%;
-	height: 5rem;
-	padding: 2.5rem;
+	width: 5.36rem;
 	border-radius: 0.6rem;
 	background-color: var(--soft-red);
 	align-self: center;
@@ -123,7 +125,11 @@ body {
 }
 
 .chart__size:not(.wed):hover {
-	background-color: var(--cream);
+	background-color: var(--soft-red-gradient);
+}
+
+.mon {
+	height: 5rem;
 }
 
 .tue {
@@ -131,25 +137,61 @@ body {
 }
 
 .wed {
-	height: 15rem;
-}
-
-.wed:hover {
+	height: 16rem;
 	background-color: var(--cyan);
 }
 
+.wed:hover {
+	background-color: var(--cyan-gradient);
+}
+
 .thu {
-	height: 8.9rem;
+	height: 9rem;
 }
 
 .fri {
-	height: 6.7rem;
+	height: 6.8rem;
 }
 
 .sat {
-	height: 12.4rem;
+	height: 12.5rem;
 }
 
 .sun {
-	height: 7.3rem;
+	height: 7.4rem;
+}
+
+.border {
+	background-color: var(--cream);
+	border: 1px solid var(--cream);
+	margin: 3.5rem 0;
+}
+
+.chart__summary {
+	color: var(--medium-brown);
+}
+
+.summary__box {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 0.5rem;
+}
+
+.summary__balance {
+	font-size: 4.8rem;
+	font-weight: 700;
+	line-height: 1.2;
+	color: var(--dark-brown);
+}
+
+.summary__remark {
+	display: flex;
+	flex-direction: column;
+}
+
+.summary__remark span {
+	color: var(--dark-brown);
+	font-weight: 700;
+	margin-left: auto;
 }
