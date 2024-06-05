@@ -1,0 +1,79 @@
+/* 580px - 36.25em */
+@media screen and (max-width: 36.25em) {
+	html {
+		font-size: 56.25%;
+	}
+
+	.chart {
+		max-width: 100%;
+	}
+
+	.chart__header {
+		padding: 2rem 3rem;
+	}
+
+	.mon {
+		height: 7rem;
+	}
+
+	.tue {
+		height: 15rem;
+	}
+
+	.wed {
+		height: 25rem;
+	}
+
+	.thu {
+		height: 13rem;
+	}
+
+	.fri {
+		height: 9.5rem;
+	}
+
+	.sat {
+		height: 20rem;
+	}
+
+	.sun {
+		height: 10.5rem;
+	}
+}
+
+/* 500px - 31.25em */
+@media screen and (max-width: 31.25em) {
+	html {
+		font-size: 50%;
+	}
+
+	.header__balance,
+	.stats-title {
+		letter-spacing: -0.5px;
+	}
+}
+
+/* 445px - 27.81em */
+@media screen and (max-width: 27.81em) {
+	html {
+		font-size: 43.75%;
+	}
+}
+
+/* 385px - 24em */
+@media screen and (max-width: 24em) {
+	html {
+		font-size: 40%;
+	}
+}
+
+/*355px - 22.18em */
+@media screen and (max-width: 22.18em) {
+	html {
+		font-size: 35%;
+	}
+
+	.chart__header {
+		padding: 3rem;
+	}
+}
